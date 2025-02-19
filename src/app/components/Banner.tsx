@@ -9,7 +9,7 @@ const Banner: React.FC = () => {
           <h1 className="title-font sm:text-4xl text-4xl mb-4 font-medium text-[#FFB22C]">
             Unleash Your Inner Radiance
             <br className="hidden lg:inline-block" />
-            with Astra Cosmetics
+            with Lustra Cosmetics
           </h1>
           <p className="mb-8 leading-relaxed text-gray-300">
             Discover our premium collection of skincare and makeup, crafted with natural ingredients and designed to make you shine. Glow with confidence and embrace your true beauty.
