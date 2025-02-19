@@ -64,7 +64,7 @@ function Contact() {
                 <h2 className="text-[#FFB22C] text-2xl md:text-4xl mb-3">Contact Information</h2>
                 <p className="text-gray-300 mb-3 md:text-2xl">Feel free to reach out to us through any of the following methods:</p>
                 <p className="text-gray-300 md:text-xl"><strong>Email:</strong> bahad473@gmail.com</p>
-                <p className="text-gray-300 md:text-xl"><strong>Phone:</strong> 0315-8829818</p>
+                {/* <p className="text-gray-300 md:text-xl"><strong>Phone:</strong> 0315-8829818</p> */}
                 {/* <p className="text-gray-300 md:text-xl"><strong>Address:</strong> 1234 Beauty Blvd, Skincare City, CA 90001</p> */}
               </div>
             </div>

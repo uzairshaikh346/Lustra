@@ -33,7 +33,7 @@ const ProductInfo: React.FC = () => {
   console.log('Product Data State:', productData);
 
   return (
-    <div className="flex flex-col bg-black">
+    <div className="flex flex-col bg-black" id='Products'>
       <div className="shrink-0 w-full h-0" />
       <div className="flex flex-col items-center pt-16 w-full max-md:pl-5">
         <h1 className="text-5xl font-medium text-[#FFB22C] animate__animated animate__bounce hover:animate-bounce">

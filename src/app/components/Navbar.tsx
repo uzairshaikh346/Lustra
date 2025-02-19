@@ -11,6 +11,8 @@ export default function Navbar() {
 
         <div className='text-gray-300 flex gap-10 text-2xl'>
           <Link href="/" className='hover:text-[#FFB22C]'>Home</Link>
+          <Link href="#Products" className='hover:text-[#FFB22C]'>Products</Link>
+          
           <Link href="#About" className='hover:text-[#FFB22C]'>About</Link>
           <Link href="#Contact" className='hover:text-[#FFB22C]'>Contact</Link>
 
