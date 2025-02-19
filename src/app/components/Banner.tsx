@@ -1,60 +1,31 @@
 import React from 'react';
 import Link from 'next/link';
 
-const CosmeticInfoSection: React.FC = () => {
+const Banner: React.FC = () => {
   return (
-    <div className="flex flex-col text-black">
-      <div className="flex relative flex-col items-start px-20 pt-6 pb-96 w-full min-h-[750px] max-md:px-5 max-md:pb-24 max-md:max-w-full">
-        <img
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/1eefa295acdde4f8d76b1e93f54793f86c6241546c9b588efda33e6086e15817?placeholderIfAbsent=true&apiKey=d576bd6e955f48bd991858acd2b7cebb"
-          className="object-cover absolute inset-0 size-full"
-          alt="Background image for cosmetics information"
-        />
-        <div className="flex relative flex-col mb-0 w-full max-w-[933px] max-md:mb-2.5 max-md:max-w-full">
-          <div className="flex flex-wrap gap-5 justify-between items-start w-full max-md:max-w-full">
-            <div className="self-start text-4xl" role="heading" aria-level={1}>
-              INFO BAO
-            </div>
-          </div>
-          <div className="flex flex-col self-end mt-28 max-w-full w-[356px] max-md:mt-10 max-md:mr-2">
-            <h2 className="text-5xl max-md:text-4xl">About Cosmetics</h2>
-            <p className="mt-6 mr-6 ml-4 text-sm max-md:mx-2.5">
-              Learn more about other cosmetics with INFO BAO
-            </p>
-            <div
-              className="shrink-0 self-center mt-20 h-0.5 border border-solid border-stone-50 w-[132px] max-md:mt-10"
-              aria-hidden="true"
-            ></div>
-            <div className="flex z-10 self-center max-w-full text-sm w-[132px]">
-              <div className="flex flex-col w-full">
-                <div className="flex gap-3 self-start">
-                  <div
-                    className="shrink-0 w-px h-9 border border-white border-solid"
-                    aria-hidden="true"
-                  ></div>
-                  <Link
-                    href="#more-info"
-                    className="my-auto basis-auto hover:underline focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-                  >
-                    More information
-                  </Link>
-                </div>
-                <div
-                  className="shrink-0 h-0.5 border border-white border-solid"
-                  aria-hidden="true"
-                ></div>
-              </div>
-              <div
-                className="shrink-0 w-px border border-white border-solid h-[38px]"
-                aria-hidden="true"
-              ></div>
-            </div>
-          </div>
+    <section className="text-gray-600 body-font bg-black/80 flex flex-col px-5 md:px-20 md:pt-10 md:flex-row">
+      <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-cente">
+        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+          <h1 className="title-font sm:text-4xl text-4xl mb-4 font-medium text-[#FFB22C]">
+            Unleash Your Inner Radiance
+            <br className="hidden lg:inline-block" />
+            with Astra Cosmetics
+          </h1>
+          <p className="mb-8 leading-relaxed text-gray-300">
+            Discover our premium collection of skincare and makeup, crafted with natural ingredients and designed to make you shine. Glow with confidence and embrace your true beauty.
+          </p>
+         
         </div>
-      </div>
-    </div>
+        </div>
+        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+          <img
+            className="object-cover object-center rounded h-full"
+            alt="hero"
+            src="/Banner_girl.png" // Replace with your actual image path
+          />
+        </div>
+    </section>
   );
 };
 
-export default CosmeticInfoSection;
+export default Banner;
