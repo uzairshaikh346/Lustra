@@ -23,7 +23,7 @@ export default {
         name: 'description',
         title: 'Description',
         type: 'text',
-        validation: (Rule: Rule) => Rule.required().min(20).max(1000),
+        validation: (Rule: Rule) => Rule.required().min(10).max(1000),
       },
       {
         name: 'price',

@@ -1,16 +1,35 @@
-import React from "react";
+"use client"
+import React, { useEffect } from "react";
 
 function About() {
+  useEffect(() => {
+    // Add animation classes on component mount
+    const aboutTitle = document.querySelector(".about-title");
+    const aboutCards = document.querySelectorAll(".about-card");
+
+    if (aboutTitle) {
+      aboutTitle.classList.add("animate-fadeInUp");
+    }
+
+    if (aboutCards) {
+      aboutCards.forEach((card, index) => {
+        setTimeout(() => {
+          card.classList.add(index % 2 === 0 ? "animate-scaleIn" : "animate-rotateIn");
+        }, index * 300); // Stagger animations
+      });
+    }
+  }, []);
+
   return (
     <div>
       <section id="About" className="text-gray-600 body-font bg-black/90">
         <div className="container px-5 py-24 mx-auto">
-          <h1 className="text-5xl font-medium title-font text-[#FFB22C] mb-12 text-center animate__animated animate__bounce hover:animate-bounce">
+          <h1 className="about-title text-5xl font-medium title-font text-[#FFB22C] mb-12 text-center">
             About us
           </h1>
           <div className="flex flex-wrap -m-4">
             <div className="p-4 md:w-1/2 w-full">
-              <div className="h-full bg-black p-8 rounded">
+              <div className="about-card h-full bg-black p-8 rounded">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -31,7 +50,7 @@ function About() {
               </div>
             </div>
             <div className="p-4 md:w-1/2 w-full">
-              <div className="h-full bg-black p-8 rounded">
+              <div className="about-card h-full bg-black p-8 rounded">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"

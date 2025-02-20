@@ -10,3 +10,98 @@
 html {
     scroll-behavior: smooth;
   }
+
+/* Banner styles */
+.banner {
+  position: relative;
+  overflow: hidden;
+}
+
+.animated-title {
+  animation: titleAnimation 3s ease-in-out infinite;
+}
+
+.animated-paragraph {
+  animation: paragraphAnimation 3s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+/* Custom animation */
+@keyframes titleAnimation {
+  0% { transform: translateY(0); color: #FFB22C; }
+  50% { transform: translateY(-10px); color: #FFC95E; }
+  100% { transform: translateY(0); color: #FFB22C; }
+}
+
+@keyframes paragraphAnimation {
+  0% { transform: scale(1); color: #FFB22C; }
+  50% { transform: scale(1.05); color: #FFC95E; }
+  100% { transform: scale(1); color: #FFB22C; }
+}
+
+
+/* Custom fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+
+
+/* about section */
+
+
+/* Custom CSS Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes rotateIn {
+  from {
+    transform: rotate(-10deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+/* Apply Animations to Elements */
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.animate-scaleIn {
+  animation: scaleIn 1s ease-out forwards;
+}
+
+.animate-rotateIn {
+  animation: rotateIn 1s ease-out forwards;
+}

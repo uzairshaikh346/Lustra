@@ -101,6 +101,8 @@ const CartPage: React.FC = () => {
         </div>
       `,
       icon: 'info',
+      background: "black",
+      color: "white",
       showCancelButton: true,
       confirmButtonColor: '#3085d6',
       cancelButtonColor: '#d33',
