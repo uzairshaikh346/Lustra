@@ -61,28 +61,27 @@ const CartPage: React.FC = () => {
       const order = {
         _type: 'order',
         user: {
-          _type: 'user',
           name: userData.name,
           address: userData.address,
           contactNumber: userData.contactNumber,
           email: userData.email
         },
         products: cartItems.map(item => ({
-          _type: 'productOrder',
-          _ref: item._id,
+          name: item.name,
+          price: item.price,
           quantity: item.quantity
         })),
         paymentMethod: 'Cash on Delivery',
         orderDate: new Date().toISOString()
       };
-
+  
       await client.create(order);
       console.log('Order sent to Sanity:', order);
     } catch (error) {
       console.error('Error sending order to Sanity:', error);
     }
   };
-
+  
   const handleSubmitOrder = () => {
     Swal.fire({
       title: 'Confirm Order',
@@ -95,7 +94,7 @@ const CartPage: React.FC = () => {
           <p><strong>Payment Method:</strong> Cash on Delivery</p>
           <p><strong>Order Details:</strong></p>
           <ul>
-            ${cartItems.map(item => `<li>${item.name} - ${item.quantity} pcs</li>`).join('')}
+            ${cartItems.map(item => `<li>${item.name} - ${item.quantity} pcs - PKR: ${item.price}</li>`).join('')}
           </ul>
           <p><strong>Total Items:</strong> ${cartItems.length}</p>
         </div>
@@ -139,7 +138,7 @@ const CartPage: React.FC = () => {
                       <img src={item.imageUrl} className="rounded w-32" alt={item.name} />
                       <div>
                         <h2 className="text-lg font-medium md:text-xl">{item.name}</h2>
-                        <h3>PKR :{item.price}</h3>
+                        <h3>PKR: {item.price}</h3>
                       </div>
                     </div>
                     <div className="flex items-center space-x-2 md:space-x-4">
@@ -168,11 +167,9 @@ const CartPage: React.FC = () => {
               </div>
               <div>
                 <h2 className="text-xl font-bold text-gray-200 mt-8">Total</h2>
-               
-               
                 <div className="flex justify-between mt-4">
                   <span>Total:</span>
-                  <span>PKR :{(cartItems.reduce((total, item) => total + (item.price * item.quantity), 0)).toFixed(2)}</span>
+                  <span>PKR: {(cartItems.reduce((total, item) => total + (item.price * item.quantity), 0)).toFixed(2)}</span>
                 </div>
               </div>
               {!showForm && (
