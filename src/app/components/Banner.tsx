@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Banner: React.FC = () => {
   return (
-    <section className="text-gray-600 body-font bg-black/80 flex flex-col px-5 md:px-20 md:pt-10 md:flex-row banner">
+    <section className="text-gray-600 body-font bg-black/80 flex flex-col px-5 md:px-20 md:pt-10 md:flex-row banner pt-16">
       <div className="container mx-auto flex px-5 md:flex-row flex-col items-center">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center fade-in">
           <h1 className="title-font sm:text-4xl text-4xl mb-4 font-medium text-[#FFB22C] animated-title">

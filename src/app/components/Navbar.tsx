@@ -6,10 +6,10 @@ export default function Navbar() {
     <nav className="bg-black/90 p-2 shadow-md px-5">
       <div className="container mx-auto flex items-center justify-between">
         <Link href="/">
-        <img src="/CosmeticLogo.png" alt="" className="h-24" />
+        <img src="/CosmeticLogo.png" alt="" className="h-14 md:24" />
         </Link>
 
-        <div className='text-gray-300 flex gap-10 text-2xl'>
+        <div className='text-gray-300 md:flex gap-10 text-2xl hidden'>
           <Link href="/" className='hover:text-[#FFB22C]'>Home</Link>
           <Link href="#Products" className='hover:text-[#FFB22C]'>Products</Link>
           
@@ -17,7 +17,7 @@ export default function Navbar() {
           <Link href="#Contact" className='hover:text-[#FFB22C]'>Contact</Link>
 
         </div>
-        <Link href="/cart"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/FFFFFF/shopping-cart.png" alt="shopping-cart"/></Link>
+        <Link className='h-14 md:24' href="/cart"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/FFFFFF/shopping-cart.png" alt="shopping-cart"/></Link>
       </div>
     </nav>
   )

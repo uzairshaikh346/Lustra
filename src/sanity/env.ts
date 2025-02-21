@@ -13,5 +13,3 @@ function assertValue<T>(v: T | undefined, errorMessage: string): T {
   return v;
 }
 
-console.log('Sanity Client Config:', { apiVersion, dataset, projectId, apiToken });
-
