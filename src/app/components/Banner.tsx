@@ -1,5 +1,5 @@
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
 
 const Banner: React.FC = () => {
   return (
@@ -12,12 +12,14 @@ const Banner: React.FC = () => {
             with Lustra Cosmetics
           </h1>
           <p className="mb-8 leading-relaxed text-gray-300 animated-paragraph">
-            Discover our premium collection of skincare and makeup, crafted with natural ingredients and designed to make you shine. Glow with confidence and embrace your true beauty.
+            Discover our premium collection of skincare and makeup, crafted with
+            natural ingredients and designed to make you shine. Glow with
+            confidence and embrace your true beauty.
           </p>
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 fade-in">
           <img
-            className="object-cover object-center rounded h-full"
+            className="object-cover object-center rounded h-full lg:h-auto md:h-auto w-full"
             alt="hero"
             src="/Banner_girl.png" // Replace with your actual image path
           />

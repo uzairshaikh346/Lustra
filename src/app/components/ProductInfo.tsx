@@ -36,7 +36,7 @@ const ProductInfo: React.FC = () => {
     <div className="flex flex-col bg-black" id='Products'>
       <div className="shrink-0 w-full h-0 " />
       <div className="flex flex-col items-center pt-16 w-full max-md:pl-5 fade-in">
-        <h1 className="text-5xl font-medium text-[#FFB22C] animate__animated animate__bounce hover:animate-bounce">
+        <h1 className="text-3xl md:text-5xl font-medium text-[#FFB22C] animate__animated animate__bounce hover:animate-bounce">
           Cosmetics Info
         </h1>
         <div className="mt-24 w-full max-md:mt-10">

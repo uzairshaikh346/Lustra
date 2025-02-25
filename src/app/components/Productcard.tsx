@@ -33,7 +33,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   };
 
   return (
-    <div className="flex flex-col w-full md:w-1/3 p-16 transform transition duration-300 bg-black text-white hover:bg-gray-700 hover:text-yellow-300 hover:shadow-lg hover:-translate-y-2 animate-fadeIn">
+    <div className="flex flex-col w-full md:w-1/3 px-7 py-10 md:p-14 transform transition duration-300 bg-black text-white hover:bg-gray-700 hover:text-yellow-300 hover:shadow-lg hover:-translate-y-2 animate-fadeIn">
       <div className="flex flex-col grow text-xl">
         <img
           loading="lazy"
