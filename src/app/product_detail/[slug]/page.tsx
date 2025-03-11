@@ -82,7 +82,7 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ params }) => {
             </p>
             <div className="flex mt-5">
               <span className="title-font font-medium text-2xl text-gray-400">
-                ${product.price}
+                Rs {product.price}
               </span>
               <button
                 className="ml-auto text-white border-[2px] border-gray-400 py-2 px-6 focus:outline-none hover:border-gray-100 hover:text-white rounded text-sm md:text-lg"
